@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: 2024-09-11-create-column
+      changes:
+        - addColumn:
+            tableName: stocks
+            columns:
+              - column:
+                  name: description
+                  type: varchar(255)
